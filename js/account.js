@@ -9,7 +9,7 @@ jQuery(document).ready(function(){
   // fill input fields with account data
   function get_account_data() {
   	jQuery.ajax({
-      url: base_url+"index.php/account/get_account_data",  
+      url: base_url+"account/get_account_data",  
       cache: false,
       contentType: false,
       processData: false,
@@ -45,7 +45,7 @@ jQuery(document).ready(function(){
     form_data.append('account_data', JSON.stringify(data));
 
     jQuery.ajax({
-      url: base_url+"index.php/account/update_account_data",  
+      url: base_url+"account/update_account_data",  
       cache: false,
       contentType: false,
       processData: false,

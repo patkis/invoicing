@@ -112,7 +112,7 @@ jQuery(document).ready(function(){
       "processing": true, // show processing indicator
       "serverSide": true, // server side ajax
       "ajax": {
-        url: base_url+"index.php/clients/get_client_list",
+        url: base_url+"clients/get_client_list",
         type: 'POST',
       },
      "language": { // translation
@@ -155,7 +155,7 @@ jQuery(document).ready(function(){
 
   function add_client_data(form_data) {
   	jQuery.ajax({
-      url: base_url+"index.php/clients/add_client_data",  
+      url: base_url+"clients/add_client_data",  
       cache: false,
       contentType: false,
       processData: false,
@@ -176,7 +176,7 @@ jQuery(document).ready(function(){
   // fill modal with client data
   function get_client_data(form_data) {
   	jQuery.ajax({
-      url: base_url+"index.php/clients/get_client_data",  
+      url: base_url+"clients/get_client_data",  
       cache: false,
       contentType: false,
       processData: false,
@@ -196,7 +196,7 @@ jQuery(document).ready(function(){
   
   function update_client_data(form_data) {
   	jQuery.ajax({
-      url: base_url+"index.php/clients/update_client_data",  
+      url: base_url+"clients/update_client_data",  
       cache: false,
       contentType: false,
       processData: false,
@@ -219,7 +219,7 @@ jQuery(document).ready(function(){
     form_data.append('client_id', id);
 
     jQuery.ajax({
-      url: base_url+"index.php/clients/remove_client_data",  
+      url: base_url+"clients/remove_client_data",  
       cache: false,
       contentType: false,
       processData: false,

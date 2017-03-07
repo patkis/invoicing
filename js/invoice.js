@@ -214,7 +214,7 @@ jQuery(document).ready(function(){
       "processing": true, // show processing indicator
       "serverSide": true, // server side ajax
       "ajax": {
-        url: base_url+"index.php/invoice/get_invoice_list",
+        url: base_url+"invoice/get_invoice_list",
         type: 'POST',
         error : function(data) {
           alert(JSON.stringify(data));
@@ -262,7 +262,7 @@ jQuery(document).ready(function(){
 
   function add_invoice_data(form_data) {
   	jQuery.ajax({
-      url: base_url+"index.php/invoice/add_invoice_data",  
+      url: base_url+"invoice/add_invoice_data",  
       cache: false,
       contentType: false,
       processData: false,
@@ -289,7 +289,7 @@ jQuery(document).ready(function(){
   // fill modal with invoice data
   function get_invoice_data(form_data) {
   	jQuery.ajax({
-      url: base_url+"index.php/invoice/get_invoice_data",  
+      url: base_url+"invoice/get_invoice_data",  
       cache: false,
       contentType: false,
       processData: false,
@@ -319,7 +319,7 @@ jQuery(document).ready(function(){
   // fill select with klients
   function fill_client_dropdown() {
     jQuery.ajax({
-      url: base_url+"index.php/invoice/fill_client_dropdown",  
+      url: base_url+"invoice/fill_client_dropdown",  
       cache: false,
       contentType: false,
       processData: false,
@@ -336,7 +336,7 @@ jQuery(document).ready(function(){
   
   function update_invoice_data(form_data) {
   	jQuery.ajax({
-      url: base_url+"index.php/invoice/update_invoice_data",  
+      url: base_url+"invoice/update_invoice_data",  
       cache: false,
       contentType: false,
       processData: false,
@@ -365,7 +365,7 @@ jQuery(document).ready(function(){
     form_data.append('invoice_id', id);
 
     jQuery.ajax({
-      url: base_url+"index.php/invoice/remove_invoice_data",  
+      url: base_url+"invoice/remove_invoice_data",  
       cache: false,
       contentType: false,
       processData: false,
@@ -392,7 +392,7 @@ jQuery(document).ready(function(){
     form_data.append('invoice_item_id', id);
 
     jQuery.ajax({
-      url: base_url+"index.php/invoice/remove_invoice_item",  
+      url: base_url+"invoice/remove_invoice_item",  
       cache: false,
       contentType: false,
       processData: false,

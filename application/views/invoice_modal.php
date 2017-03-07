@@ -15,26 +15,22 @@
 
             <?php echo form_open('', array('id' => 'invoice_form','class' => 'form-horizontal'))?>
               <div class="form-group">
-                <?php echo form_label('Klient:', 'client', array('class' => 'control-label col-sm-4'));?>
-                <div class="col-sm-6">
+                <?php echo form_label('Klient:', 'client', array('class' => 'control-label col-sm-3'));?>
+                <div class="col-sm-3">
                   <?php echo form_dropdown('client', array('O' => ''), '', array('id' => 'client', 'class' => 'form-control')); ?>
                 </div>
-              </div>
-              <div class="form-group">
-                <?php echo form_label('Číslo faktúry:', 'var_sym', array('class' => 'control-label col-sm-4'));?>
-                <div class="col-sm-6">
+                <?php echo form_label('Číslo faktúry:', 'var_sym', array('class' => 'control-label col-sm-3 '));?>
+                <div class="col-sm-3">
                   <?php echo form_input(array('name' => 'var_sym', 'id' => 'var_sym', 'class' => 'form-control'));?>
                 </div>
               </div>
               <div class="form-group">
-                <?php echo form_label('Dátum vystavenia:', 'created', array('class' => 'control-label col-sm-4'));?>
-                <div class="col-sm-6">
+                <?php echo form_label('Dátum vystavenia:', 'created', array('class' => 'control-label col-sm-3'));?>
+                <div class="col-sm-3">
                   <?php echo form_input(array('name' => 'created', 'id' => 'created', 'class' => 'form-control', 'data-provide' => 'datepicker'));?>
                 </div>
-              </div>
-              <div class="form-group">
-                <?php echo form_label('Dátum splatnosti:', 'expired', array('class' => 'control-label col-sm-4'));?>
-                <div class="col-sm-6">
+                <?php echo form_label('Dátum splatnosti:', 'expired', array('class' => 'control-label col-sm-3'));?>
+                <div class="col-sm-3">
                   <?php echo form_input(array('name' => 'expired', 'id' => 'expired', 'class' => 'form-control'));?>
                 </div>
               </div>

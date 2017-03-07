@@ -37,8 +37,8 @@
     </div>
 
     <ul class="nav nav-pills">
-      <li id="nav-invoice"><a href="<?php echo base_url(); ?>index.php/invoice/">Faktúry</a></li>
-      <li id="nav-client"><a href="<?php echo base_url(); ?>index.php/clients/">Adresár</a></li>
-      <li id="nav-account"><a href="<?php echo base_url(); ?>index.php/account/">Moje údaje</a></li>
+      <li id="nav-invoice"><a href="<?php echo base_url(); ?>invoice/">Faktúry</a></li>
+      <li id="nav-client"><a href="<?php echo base_url(); ?>clients/">Adresár</a></li>
+      <li id="nav-account"><a href="<?php echo base_url(); ?>account/">Moje údaje</a></li>
     </ul>
 
