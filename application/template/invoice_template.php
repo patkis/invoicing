@@ -30,7 +30,7 @@
           <td>
             <strong>Odberatel:</strong><br>
             $invoice_data->company<br>
-            $invoice_data->fname $account_data->lname<br>
+            $invoice_data->fname $invoice_data->lname<br>
             <strong>IČO:</strong> $invoice_data->ico<br>
             <strong>DIČ:</strong> $invoice_data->dic<br>
             <strong>IČ DPH:</strong> $invoice_data->icdph

@@ -56,7 +56,7 @@ delete from clients;
 /* table for storing invoices */
 create table invoice(
 id INT NOT NULL AUTO_INCREMENT,
-id_client INT(10) NOT NULL,
+client INT(10) NOT NULL,
 var_sym INT(10) NOT NULL,
 created DATE NOT NULL,
 expired DATE NOT NULL,
@@ -110,6 +110,9 @@ ico INT(8) NULL,
 dic INT(10) NULL,
 icdph VARCHAR(12) NULL
 )
+
+/* insert test account */
+insert into `invoicing`.`account` (`company`, `fname`, `lname`, `email`, `street`, `city`, `zip`, `country`, `ico`, `dic`, `icdph`) VALUES ('moja s.r.o.', 'Patrik', 'Kiss', 'patkis@mail.sk', 'Hlavna 77', 'Dunajská Streda', '94001', 'SK', '88887777', '8877665544', 'SK8877665544');
 
 /* delete table account */
 drop table account;

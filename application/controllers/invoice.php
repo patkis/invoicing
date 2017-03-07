@@ -19,12 +19,12 @@
       $filters = $this->get_table_filters($post_params);
       
       /* query count */
-      $sql_count = "select i.var_sym, i.created, i.expired, c.company from invoice i inner join clients c on i.id_client=c.id where {$filters['where']}";
+      $sql_count = "select i.var_sym, i.created, i.expired, c.company from invoice i inner join clients c on i.client=c.id where {$filters['where']}";
       $query = $this->db->query($sql_count);
       $num_rows = $query->num_rows();
 
       /* query data */
-      $sql = "select i.id, i.var_sym, i.created, i.expired, c.company from invoice i inner join clients c on i.id_client=c.id where {$filters['where']} order by {$filters['orderBy']} {$filters['orderType']} limit {$filters['length']} offset {$filters['start']}";
+      $sql = "select i.id, i.var_sym, i.created, i.expired, c.company from invoice i inner join clients c on i.client=c.id where {$filters['where']} order by {$filters['orderBy']} {$filters['orderType']} limit {$filters['length']} offset {$filters['start']}";
       $query = $this->db->query($sql);
       $invoice_data = $query->result();
       
