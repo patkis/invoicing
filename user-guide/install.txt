@@ -1,0 +1,12 @@
+
+Invoicing install
+mini invoicing system
+
+
+1. for apllication to work create mysql database 'invoicing' and create tables
+(see query.sql)
+
+2. copy application directory invoicing to your local environment
+
+3. open up internet browser and type: myhost/invoicing/
+for example: http://localhost/invoicing/
