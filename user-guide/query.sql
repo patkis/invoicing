@@ -46,7 +46,7 @@ insert into clients
 ('Ladislav','Veľký','ladvelky@mail.sk','Dierova 222','Bratislava','91234','SK',12341234,334455112233,'334455112233');
 insert into clients
 (fname,lname,email,street,city,zip,country,ico,dic,icdph) values 
-('IVA','Krásna','ivakrasna@mail.sk','Hlavna 88','Košice','98012','SK',98765432,8877665544,'8877665544');
+('Iva','Krásna','ivakrasna@mail.sk','Hlavna 88','Košice','98012','SK',98765432,8877665544,'8877665544');
 
 /* delete from clients */
 delete from clients;

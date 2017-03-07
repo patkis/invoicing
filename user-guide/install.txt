@@ -5,6 +5,7 @@ mini invoicing system
 
 1. for apllication to work create mysql database 'invoicing' and create tables
 (see query.sql)
+don’t forget to insert data to table ‘account’ first
 
 2. copy application directory invoicing to your local environment
 
