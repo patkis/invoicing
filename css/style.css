@@ -1,0 +1,64 @@
+body {
+	background-color: #ecf0f1
+}
+
+label.error {
+  color: red;
+  display: block;
+  text-align: center;
+}
+
+button#client_add {
+	margin-left: 10px;
+}
+
+div.dataTables_filter button  {
+	margin-left: 5px;
+}
+
+select#client {
+	width: auto;
+}
+
+.data_wrap {
+	margin-top: 20px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.jumbotron {
+	padding-top: 10px;
+	padding-bottom: 5px;
+	margin-bottom: 20px;
+}
+
+.jumbotron h1 {
+	text-shadow: 3px 3px 5px #000;
+}
+
+.footer {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.jumbotron, .footer, #invoice_list thead, .modal-header {
+	color: #fff;
+	background-color: #2980b9;
+}
+
+.modal-dialog,
+.modal-content {
+    height: auto;
+}
+
+.modal-body {
+    max-height: calc(100% - 120px);
+    overflow-y: scroll;
+}
+
+#account_wrap {
+	margin-top: 35px;
+}
+
+
+
