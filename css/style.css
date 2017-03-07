@@ -41,7 +41,7 @@ select#client {
 	padding-bottom: 5px;
 }
 
-.jumbotron, .footer, #invoice_list thead, .modal-header {
+.jumbotron, .footer, #invoice_list thead, #client_list thead, .modal-header {
 	color: #fff;
 	background-color: #2980b9;
 }

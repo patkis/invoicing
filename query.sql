@@ -1,7 +1,21 @@
 
+/*********************************************************************
 
+  database setup for application Invoicing 
+
+  created by Patrik Kiss
+
+*********************************************************************/
+
+/* create database */
 create database invoicing character set utf8 collate utf8_general_ci;
 
+/* delete database */
+drop database invoicing;
+
+/*********************************************************************/
+
+/* table for storing clients */
 create table clients(
 id INT NOT NULL AUTO_INCREMENT,
 company VARCHAR(100) NOT NULL,
@@ -18,8 +32,12 @@ icdph VARCHAR(12) NULL,
 is_valid TINYINT(1) DEFAULT 1,
 sys_inserted TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 PRIMARY KEY (id)
-)
+);
 
+/* delete table clients */
+drop table clients;
+
+/* insert some test clients */
 insert into clients
 (fname,lname,email,street,city,zip,country,ico,dic,icdph) values 
 ('Ján','Malý','janmaly@mail.sk','Hviezdna 111','Bratislava','91234','SK',12345678,1122334455,'SK1122334455');
@@ -30,11 +48,12 @@ insert into clients
 (fname,lname,email,street,city,zip,country,ico,dic,icdph) values 
 ('IVA','Krásna','ivakrasna@mail.sk','Hlavna 88','Košice','98012','SK',98765432,8877665544,'8877665544');
 
-selectfname,lname,email,concat(street,', ',zip,', ',city) as address,country from clients where is_valid
+/* delete from clients */
+delete from clients;
 
-select i.var_sym, i.created, i.expired, concat(c.fname,' ',c.lname) as name 
-from invoice i inner join clients c on i.id_client=c.id
+/*********************************************************************/
 
+/* table for storing invoices */
 create table invoice(
 id INT NOT NULL AUTO_INCREMENT,
 id_client INT(10) NOT NULL,
@@ -45,12 +64,20 @@ sys_inserted TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 PRIMARY KEY (id)
 )
 
+/* insert some test invoice */
 insert into invoice
 (id_client,var_sym,created,expired) values 
 (1,123456,'2017-02-21','2017-03-21');
 
+/* delete table invoice */
+drop table invoice;
 
+/* delete from invoice */
+delete from invoice;
 
+/*********************************************************************/
+
+/* table for invoice items */
 create table invoice_item(
 id INT NOT NULL AUTO_INCREMENT,
 id_invoice INT(10) NOT NULL,
@@ -61,7 +88,15 @@ sys_inserted TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 PRIMARY KEY (id)
 )
 
+/* delete table invoice_item */
+drop table invoice_item;
 
+/* delete from invoice item */
+delete from invoice_item;
+
+/*********************************************************************/
+
+/* table for supplier account */
 create table account(
 company VARCHAR(100) NULL,
 fname VARCHAR(100) NULL,
@@ -75,4 +110,10 @@ ico INT(8) NULL,
 dic INT(10) NULL,
 icdph VARCHAR(12) NULL
 )
+
+/* delete table account */
+drop table account;
+
+/* delete from account */
+delete from account;
 
