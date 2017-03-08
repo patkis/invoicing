@@ -9,5 +9,7 @@ don’t forget to insert data to table ‘account’ first
 
 2. copy application directory invoicing to your local environment, rename folder to 'invoicing'
 
-3. open up internet browser and type: myhost/invoicing/
+3. set base_url in application/config/config.php
+
+4. open up internet browser and type: myhost/invoicing/
 for example: http://localhost/invoicing/
